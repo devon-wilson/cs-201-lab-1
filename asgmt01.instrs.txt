@@ -1,0 +1,73 @@
+CS201 Lab 1 INSTRUCTIONS
+-------------------------------
+
+Your code should accept user input in the form of 8 hexadecimal digits.
+Your code will interpret those 8 digits as an IEEE 754 32-bit floating point
+number and will print out information about that number. Do not worry about bad
+input. You do not need to check for bad input.
+
+Use scanf to get the user input. Your code should accept input with or without
+"0x" in front of it (scanf does this).
+
+For each number, your code should print out:
+
+    * the sign bit
+    * the exponent bits, expressed as a decimal number
+    * the fraction bits, expressed as an 8 digit hexadecimal number
+
+Here is what your code should print out for the various types of floating point
+number:
+
+    * normalized
+        the word "normalized" and the true exponent
+        (i.e. the power to which 2 will be raised in computing the numerical
+        value of the floating point number)
+    * denormalized
+        the word "denormalized" and the true exponent
+    * infinity
+        "+infinity" or "-infinity"
+    * zero
+        "+zero" or "-zero"
+    * NaN
+        "SNaN" or "QNaN"
+
+Your program's output should be formatted exactly as shown in asgmt01p.output.txt
+(including uppercase vs. lowercase). Use %X for formatting hex output, NOT %x.
+
+Your program should exit when user input that results in a zero value is
+entered, after printing the information for that zero input.
+
+Start with file a01p.c, contained in this directory.
+
+Upload your work as a01p.c.
+
+--------------------------------------------------------------------------------
+
+REQUIRED PLATFORM
+
+I grade your code on syccuxas01.pcc.edu. Your code is required to compile and
+run correctly on that machine.
+
+
+GRADING YOUR CODE
+
+Your code needs to compile without errors or warnings and run correctly. Code
+that does not compile will receive zero points. Code that crashes will receive
+zero points.
+
+
+TO SUBMIT THIS ASSIGNMENT
+
+Submit the requested file to Desire2Learn.
+
+    * Be certain to check that you completed the upload successfully. After you
+        click the Upload File button, you must also click the SUBMIT ASSIGNMENT
+        button. This is very easy to forget. If you do not do this, I will not
+        see your work and you will get a grade of zero for the assignment. I
+        would recommend entering an email address so you can be notified that
+        the upload was completed successfully.
+    * You may upload as many versions as you wish prior to the due date. I will
+        only see and grade the final one. You will not be able to upload
+        assignments after the due date.
+
+
